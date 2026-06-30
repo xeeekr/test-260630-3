@@ -1,5 +1,5 @@
 import { Game } from "./game.js";
-import { clamp } from "./utils.js";
+import { clamp } from "./utils.js"; // 필요한 경우 제거하고 game.js 내 import 사용
 
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d", { alpha: false });
@@ -17,7 +17,7 @@ function resize() {
 window.addEventListener("resize", resize);
 resize();
 
-const game = new Game({ width: 800, height: 600 }); // 가상 월드 크기
+const game = new Game({ width: 800, height: 600 });
 game.start();
 
 window.addEventListener("keydown", (e) => game.inputKey(e.key, true));

@@ -1,4 +1,4 @@
-import { clamp } from './utils.js';
+import { clamp } from "./utils.js";
 
 export class Game {
   constructor(opts) {
@@ -58,22 +58,6 @@ export class Game {
     this.player.y = clamp(this.player.y, 0, this.worldH);
   }
 
-render() {
-  const canvas = document.getElementById('game');
-  const ctx = canvas.getContext('2d');
-  ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
-
-  // 간단한 디버그: 화면 중앙에 원 그리기
-  ctx.fillStyle = '#fff';
-  ctx.beginPath();
-  ctx.arc(canvas.clientWidth / 2, canvas.clientHeight / 2, 30, 0, Math.PI * 2);
-  ctx.fill();
-
-  // 현재 카메라/플레이어 위치 로깅으로 확인
-  // console.log('player', this.player.x, this.player.y);
-}
-
-/*
   render() {
     // 화면 중앙에 고정된 카메라 가정: 플레이어를 화면 중앙에 두고, 월드 좌표를 화면 중앙으로 맵핑
     const canvas = document.getElementById("game");
@@ -135,6 +119,5 @@ render() {
     ctx.restore();
   }
 }
-*/
-  
+
 // 유틸리티 파일 추가 필요

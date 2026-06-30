@@ -1,0 +1,12 @@
+{
+  "name": "topdown-wasd-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5173"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  }
+}

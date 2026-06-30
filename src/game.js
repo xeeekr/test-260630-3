@@ -1,3 +1,5 @@
+import { clamp } from './utils.js';
+
 export class Game {
   constructor(opts) {
     this.worldW = opts.width;

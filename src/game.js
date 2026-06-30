@@ -1,3 +1,5 @@
+import { clamp } from "./utils.js"; // 필요한 경우 제거하고 game.js 내 import 사용
+
 export class Game {
   constructor(opts) {
     this.worldW = opts.width;
